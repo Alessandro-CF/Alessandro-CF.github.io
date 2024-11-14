@@ -1,1 +1,43 @@
-Hola Mundo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-blue-600 p-4">
+        <h1 class="text-3xl text-white text-center">Bienvenidos a Mi Página Personal</h1>
+    </header>
+
+    <!-- Sección de información personal -->
+    <section class="container mx-auto p-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-2">Sobre mí</h2>
+            <p>Hola, soy [Tu Nombre] y me apasiona la tecnología, la música y el deporte. Esta página es una pequeña muestra de mis intereses y proyectos.</p>
+        </div>
+    </section>
+
+    <!-- Sección de aficiones -->
+    <section class="container mx-auto p-4 mt-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4">Mis Aficiones</h2>
+            <ul class="list-disc list-inside">
+                <li class="mb-2">🎸 Música: Toco la guitarra y disfruto explorando diferentes géneros.</li>
+                <li class="mb-2">📚 Lectura: Me encanta leer sobre ciencia ficción y tecnología.</li>
+                <li class="mb-2">⚽ Deportes: Juego al fútbol y me gusta mantenerme activo.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 mt-8 text-center text-white">
+        <p>© <?php echo date("Y"); ?> Mi Página Personal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
