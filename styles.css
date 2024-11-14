@@ -1,4 +1,23 @@
 /* styles.css */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
+}
+
+section {
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
 }

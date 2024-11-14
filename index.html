@@ -3,41 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Alessandro Choque - Página Personal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <!-- Navbar -->
-    <header class="bg-blue-600 p-4">
-        <h1 class="text-3xl text-white text-center">Bienvenidos a Mi Página Personal</h1>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <!-- Navbar mejorado -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 p-6 shadow-lg">
+        <h1 class="text-4xl text-white text-center font-bold tracking-wider transform hover:scale-105 transition-transform duration-300">
+            Bienvenidos a Mi Página Personal
+        </h1>
     </header>
 
-    <!-- Sección de información personal -->
-    <section class="container mx-auto p-4">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold mb-2">Sobre mí</h2>
-            <p>Hola, soy [Tu Nombre] y me apasiona la tecnología, la música y el deporte. Esta página es una pequeña muestra de mis intereses y proyectos.</p>
-        </div>
-    </section>
+    <main class="container mx-auto p-6">
+        <!-- Sección About Me mejorada -->
+        <section class="mb-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 class="text-3xl font-bold mb-4 text-blue-600">Sobre mí</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Hola, soy <span class="font-semibold text-blue-600">Alessandro Choque Fernandez</span> y me apasiona la tecnología, 
+                    la música y los juegos. Esta página es una pequeña muestra de mis 
+                    intereses y proyectos.
+                </p>
+            </div>
+        </section>
 
-    <!-- Sección de aficiones -->
-    <section class="container mx-auto p-4 mt-4">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold mb-4">Mis Aficiones</h2>
-            <ul class="list-disc list-inside">
-                <li class="mb-2">🎸 Música: Toco la guitarra y disfruto explorando diferentes géneros.</li>
-                <li class="mb-2">📚 Lectura: Me encanta leer sobre ciencia ficción y tecnología.</li>
-                <li class="mb-2">⚽ Deportes: Juego al fútbol y me gusta mantenerme activo.</li>
-            </ul>
-        </div>
-    </section>
+        <!-- Nueva sección de habilidades -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Mis Habilidades</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="mb-4">
+                        <span class="text-lg font-semibold text-gray-700">Desarrollo Web</span>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full w-[85%] transition-all duration-500"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="text-lg font-semibold text-gray-700">Diseño UI/UX</span>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full w-[75%] transition-all duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-600 p-4 mt-8 text-center text-white">
-        <p>© <?php echo date("Y"); ?> Mi Página Personal</p>
+        <!-- Sección de aficiones mejorada -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Mis Aficiones</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">🎸</div>
+                    <h3 class="font-bold text-xl mb-2 text-blue-600">Música</h3>
+                    <p class="text-gray-600">Toco la guitarra y disfruto explorando diferentes géneros musicales.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="font-bold text-xl mb-2 text-blue-600">Lectura</h3>
+                    <p class="text-gray-600">Me encanta leer sobre ciencia ficción y tecnología.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">⚽</div>
+                    <h3 class="font-bold text-xl mb-2 text-blue-600">Deportes</h3>
+                    <p class="text-gray-600">Juego al fútbol y me gusta mantenerme activo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white p-6 mt-8">
+        <p class="text-center">&copy; 2024 Alessandro Choque</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
